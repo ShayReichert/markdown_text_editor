@@ -2,7 +2,7 @@
 ## This fantastic ReadMe is written with it.
 
 ***Click on this image to access :***
-[![RandomSentenceMachine](https://github.com/ShayReichert/markdown_text_editor/blob/master/public/screen_markdown.png)](https://shayreichert.github.io/random_quote_machine/)
+[![RandomSentenceMachine](https://github.com/ShayReichert/markdown_text_editor/blob/master/public/screen_markdown.png)](https://shayreichert.github.io/markdown_text_editor/)
 
 
 ## Description
