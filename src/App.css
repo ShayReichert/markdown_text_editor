@@ -1,38 +1,75 @@
+/* //// GENERAL //// */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #dce7e9;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* border: 3px solid red; */
+  height: 100vh;
+  margin: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+/* grosses div */
+.editor-wrap,
+.preview-wrap {
+  width: 580px;
+  margin: 5px 5px;
+  padding: 8px;
+  max-height: 95vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+/* //// MODULES //// */
+
+/* Module header bar editor + previewer */
+.header-bar {
+  border: double grey;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px #3b3e3f;
+  padding: 5px;
+  background-color: #3b3e3f;
+  color: #dce7e9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Commun entre les deux modules */
+.editor-wrap textarea, #preview {
+  border: groove grey;
+  max-height: 80vh;
+  overflow: scroll;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px #3b3e3f;
+}
+
+/* Module Editor */
+.editor-wrap textarea {
+  height: 90vh;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 0;
+  background-color: #3b3e3f;
+  color: #dce7e9;
+}
+
+/* Module Rendu HTML */
+.preview-wrap .header-bar, #preview {
+  background-color: #fff;
+  color: #3b3e3f;
+}
+#preview {
+  padding: 0 8px;
+  height: 90vh;
 }
